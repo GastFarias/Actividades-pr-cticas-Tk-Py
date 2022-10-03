@@ -14,7 +14,7 @@ labelContador = Label(ventana, text="Coontador")
 labelContador.grid(column=0, row=1, padx=5)
 
 Nro = StringVar(ventana,"0")
-entryNro = Entry(ventana, textvariable= Nro)
+entryNro = Entry(ventana, textvariable= Nro, state="readonly")
 entryNro.grid(column=1,row=1,padx=5)
 
 botonSiguiente = Button(ventana,text="Siguiente",command= lambda: Siguiente(), width=10)
