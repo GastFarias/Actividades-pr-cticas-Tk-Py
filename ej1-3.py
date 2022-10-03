@@ -7,14 +7,14 @@ labelNRo = Label(ventana, text="Nro: ")
 labelNRo.grid(column=0,row=0)
 
 varNro = StringVar(ventana, "1")
-entryNro = Entry(ventana, textvariable= varNro)
+entryNro = Entry(ventana, textvariable= varNro, state="readonly")
 entryNro.grid(column=1, row=0)
 
 labelFactorial = Label(ventana, text= "Factorial: ")
 labelFactorial.grid(column= 0, row= 1)
 
 varFact = StringVar(ventana, "1")
-entryFact = Entry(ventana, textvariable= varFact)
+entryFact = Entry(ventana, textvariable= varFact, state="readonly")
 entryFact.grid(column= 1, row = 1)
 
 boton = Button(ventana, text= "Aumentar", command= lambda: Aumentar())
